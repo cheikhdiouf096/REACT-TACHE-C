@@ -36,3 +36,375 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+
+
+
+/************ Default Css ************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  font-family: 'Centra', sans-serif !important;
+  background-color: #283747 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+
+
+/************ NavBar Css ************/
+
+nav.navbar {
+  padding-left: 200px;
+  padding-right: 200px;
+  background-color: #283747 !important;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 500;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/************ Banner Css ************/
+
+.banner{
+  padding-top: 40vh;
+  padding-bottom: 10vh;
+  background-color: #283747;
+}
+
+.banner .row {
+  margin-top: 5vh;
+}
+
+.banner .row4 {
+  margin-top: 20vh;
+}
+
+.banner .card-title::after {
+  content: '';
+  background-color: orangered;
+  height: 2px;
+  width: 50px;
+  margin-bottom: 40px;
+  display: block;
+  transform: translatey(8px);
+}
+
+.banner .div-icon{
+  width: 70px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.banner .b1{
+  background-color: rgba(255,0,0, 0.5);
+}
+
+.banner .b2{
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+
+.banner .b3{
+  background-color: rgba(0,0,255, 0.5);
+}
+
+
+
+.banner .card1:hover{
+  background-color: #dc3545;
+}
+
+.banner .card2:hover{
+  background-color: #20c997;
+}
+
+.banner .card3:hover{
+  background-color: #0d6efd; 
+}
+.banner .card:hover .div-icon{
+  background-color: white;
+}
+.banner .card:hover .card-title {
+  color: white;
+}
+.banner .card:hover .card-text{
+  color: white !important;
+}
+
+
+
+
+.banner .card:hover .card-title::after {
+  content: '';
+  background-color: white;
+  height: 2px;
+  width: 50px;
+  margin-bottom: 40px;
+  display: block;
+  transform: translatey(8px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/************ Products Css ************/
+
+.products {
+  background-color: azure;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  width: 100% !important;
+}
+
+.products .container-fluid {
+  background-color: azure;
+}
+
+.products a {
+  text-decoration: none;
+}
+
+.products .title::before {
+  content: '';
+  background-color: orangered;
+  height: 7px;
+  width: 100px;
+  margin-bottom: 40px;
+  display: block;
+  transform: translatey(8px);
+}
+
+.products .stat1{
+  position: relative;
+  top: 4rem;
+  left: 4rem;
+}
+
+.products .stat2{
+  position: relative;
+  top: -4rem;
+}
+
+
+
+
+
+
+
+
+
+
+/************ Pricing container1 Css ************/
+.pricing{
+  background-color: azure;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+
+.pricing .row {
+  margin-bottom: 5vh;
+}
+
+.pricing .row col {
+  background-color: green;
+}
+
+.pricing .card {
+  background-color: azure;
+  border: none;
+}
+
+.pricing .card-body .star1{
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-left: 10px;
+  position: relative;
+  left: 150px;
+}
+
+.pricing .card-body .star1 .number {
+  position: relative;
+  top: 3px;
+  margin-left: 3px;
+}
+
+.pricing .card-body .button{
+  border-radius: 20px;
+}
+
+.pricing a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/************ Princing container2 Css ************/
+
+
+.pricing .container2 {
+  margin-top: 30vh;
+  margin-bottom: 10vh;
+}
+
+.pricing .container2 .row{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.pricing .img-testimony{
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+/************ Contact Css ************/
+.contact{
+  background-color: azure;
+}
+.contact .container-fluid {
+  padding-top: 10vh;
+  padding-bottom: 30vh;
+  background-color: azure;
+  width: 100% !important;
+}
+
+.contact .container-fluid  .email{
+  display: inline-block;
+  width: 50%;
+  height: 80px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+
+}
+
+.contact .container-fluid  .submit{
+  width: 25%;
+  height: 80px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+
+
+
+
+
+
+
+/************ Footer Css ************/
+
+.footer{
+  padding-top: 10vh; 
+}
+
+.footer .container-a{
+  padding-bottom: 5rem;
+}
+
+.footer .container-fluid{
+  background-color: azure;
+  width: 100% !important;
+}
+
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer .footer-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and  (max-width: 912px) {
+ 
+
+  nav.navbar {
+   padding: 0;
+  }
+
+}
+
